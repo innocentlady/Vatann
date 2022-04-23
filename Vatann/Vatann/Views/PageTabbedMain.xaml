@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:local="clr-namespace:Vatann.Views"
+           
+            x:Class="Vatann.Views.PageTabbedMain"
+            >
+  <!--Pages can be added as references or inline-->
+    <NavigationPage.TitleView>
+        <AbsoluteLayout BackgroundColor="#003176" HorizontalOptions="FillAndExpand">
+            <Image Source="vatanlogo.ico" AbsoluteLayout.LayoutBounds="-10,-5,1,1" AbsoluteLayout.LayoutFlags="All" HeightRequest="50" Margin="-20,0,0,0" />
+        </AbsoluteLayout>
+    </NavigationPage.TitleView>
+    <!--<NavigationPage Title="Anasayfa" IconImageSource="home.png" >
+        <x:Arguments>
+        </x:Arguments>
+    </NavigationPage>-->
+
+    <local:PageMain/>
+    <local:PageCategory/> 
+    <local:PageLogin/>
+    <local:PageBasket/>
+    <local:PageOthers/>
+    
+
+</TabbedPage>

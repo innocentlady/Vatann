@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Vatann.Views.PageComputerCategory">
+    <ContentPage.Content>
+        <StackLayout>
+            <Button  Text="Oyun Bilgisayarı" BackgroundColor="White" TextColor="Black" BorderColor="Black" HorizontalOptions="Start" Clicked="Button_ComputerPage"/>
+            <Button   Text="Tablet  "  BackgroundColor="White" TextColor="Black" BorderColor="Black" HorizontalOptions="Start"/>
+            <Button  Text=" Monitör  "  BackgroundColor="White" TextColor="Black" BorderColor="Black" HorizontalOptions="Start"/>
+            <Button   Text="  Modem "  BackgroundColor="White" TextColor="Black" BorderColor="Black" HorizontalOptions="Start"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

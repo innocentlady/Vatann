@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Vatann.Views.PageFollowOrder" IconImageSource="vatanlogo.ico">
+    <NavigationPage.TitleView>
+        <AbsoluteLayout BackgroundColor="#003176" HorizontalOptions="FillAndExpand">
+            <Image Source="vatanlogo.ico" AbsoluteLayout.LayoutBounds="-10,-5,1,1" AbsoluteLayout.LayoutFlags="All" HeightRequest="50" Margin="-20,0,0,0" />
+        </AbsoluteLayout>
+    </NavigationPage.TitleView>
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+            <Label Text="   Sipariş Sorgulama" FontSize="20" FontAttributes="Bold" TextColor="Black"/>
+            <Entry BackgroundColor="#F5F5F5" Placeholder="Sipariş Numarası*" x:Name="Email" Margin="5,10" />
+            <Entry BackgroundColor="#F5F5F5" Placeholder="Eposta*"  x:Name="Eposta" Margin="5,-10" />
+           
+            <StackLayout Orientation="Horizontal">
+
+             <Button BackgroundColor="DarkBlue" Text="Sorgula" TextColor="White" x:Name="GirisYap" CornerRadius="15" HorizontalOptions="CenterAndExpand" WidthRequest="190" Margin="-10,5,0,0"  ></Button>
+                
+            </StackLayout>
+            <Label Text="Kişisel verileriniz sipariş takip süreci kapsamında tarafımızca işlenecektir.
+
+Kişisel verilerin korunmasına ilişkin aydınlatma metnimize Kişisel Verilerin Korunması adresinden erişebilirsiniz.
+
+Ürününüzü Teslim Alırken
+
+Kargo tutanağını imzalamadan önce ürününüzün kutusunda herhangi bir hasar yada sorun olup olmadığını kontrol ediniz. Herhangi bir nedenle hasar veya eksiklik, kolinin bandında açılma var ise teslimatla ilgili hiç bir belgeyi imzalamadan kargo görevlisine tutanak tutulması talebiyle birlikte kutunuzu iade ediniz. Bu yükümlülüğünüzü yerine getirdiğiniz takdirde, yeni ürünleriniz derhal tarafınıza gönderilecektir. Kutusu hasarlı olan, içeriği eksik olduğu iddia edilen ürünlerin teslim alınması durumunda içindeki ürünlerin hasarından veya eksikliğinden sorumluluğumuz bulunmamaktadır. Bu durumu en kısa zamanda eshop@vatanbilgisayar.com adresimize yazılı olarak ya da 0850 222 56 56 numaralı telefonumuza sözlü olarak, sözleşme numarası ile birlikte bildiriniz.
+
+Müşteri Hizmetlerimiz
+
+Siparişlerinizle ilgili tüm sorularınız ve ürünlerle ilgili bilgi almak için Türkiye'nin her yerinden 0850 222 56 56 numaralı telefonumuzdan bize ulaşabilir veya iletişim formumuzu doldurarak destek talebinde bulunabilirsiniz." FontAttributes="Bold" />
+        </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
+   

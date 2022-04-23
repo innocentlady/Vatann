@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Vatann.Views.PageOthers" Title="Daha Fazla" IconImageSource="dots.png">
+    <ContentPage.Content>
+        <StackLayout>
+          
+            <Button  x:Name="SiparişTakibi" Text="Sipariş Takibi" BackgroundColor="White" TextColor="Black" BorderColor="Black" HorizontalOptions="Start" Clicked="Button_Siparis"/>
+            <Button   Text="ServisTakip Formu"  BackgroundColor="White" TextColor="Black" BorderColor="Black" HorizontalOptions="Start"/>
+            <Button  Text="BizeUlaşın"  BackgroundColor="White" TextColor="Black" BorderColor="Black" HorizontalOptions="Start"/>
+            <Button   Text="Mağazalar"  BackgroundColor="White" TextColor="Black" BorderColor="Black" HorizontalOptions="Start"/>
+            <Button   Text="Hakkında"  BackgroundColor="White" TextColor="Black" BorderColor="Black" HorizontalOptions="Start" Clicked="Button_Hakkında"/>
+
+        </StackLayout>
+    </ContentPage.Content>
+   
+
+</ContentPage>

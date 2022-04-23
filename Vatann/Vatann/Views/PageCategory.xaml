@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             x:Class="Vatann.Views.PageCategory" Title="Kategoriler" IconImageSource="category.png"
+              >
+    <ContentPage.Content>
+        <StackLayout>
+
+            <Button  Text="Telefon" BackgroundColor="White" TextColor="Black" BorderColor="Black" HorizontalOptions="StartAndExpand"/>
+            <Button   Text="Bilgisayar  "  BackgroundColor="White" TextColor="Black" BorderColor="Black" HorizontalOptions="StartAndExpand" Clicked="Button_Computer"/>
+            <Button  Text=" TV,Elektronigi  "  BackgroundColor="White" TextColor="Black" BorderColor="Black" HorizontalOptions="StartAndExpand"/>
+            <Button   Text="  Bilgisayar Parcalari "  BackgroundColor="White" TextColor="Black" BorderColor="Black" HorizontalOptions="StartAndExpand"/>
+            <Button  Text=" Kamera   "   BackgroundColor="White" TextColor="Black" BorderColor="Black" HorizontalOptions="StartAndExpand"/>
+            <Button Text="  Ofis, Kırtasiye  "   BackgroundColor="White" TextColor="Black" BorderColor="Black" HorizontalOptions="StartAndExpand"/>
+            <Button  Text="  Aksesuar  "  BackgroundColor="White" TextColor="Black" BorderColor="Black" HorizontalOptions="StartAndExpand" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

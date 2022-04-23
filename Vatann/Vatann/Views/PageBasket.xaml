@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Vatann.Views.PageBasket" Title="Sepet" IconImageSource="cart.png">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+                <Image Source="basket.jpg"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand"/>
+                <!--<StackLayout x:Name="pagechoise" BackgroundColor="Transparent" Orientation="Horizontal">
+                    <Button x:Name="Anasayfa" Text="Anasayfa" ImageSource="home.png" TextColor="Gray" ContentLayout="Top,0"  BackgroundColor="White"  Margin="-10,0,-5,0" FontSize="9" Clicked="Button_Main"/>
+                    <Button x:Name="Kategoriler" Text="Kategoriler" ImageSource="category.png" ContentLayout="Top,0"  TextColor="Gray"  BackgroundColor="White"  Margin="-5,0,-10,0" FontSize="9" Clicked="Button_Clicked"/>
+                    <Button x:Name="sepet" Text="Sepet" ContentLayout="Top,0"  TextColor="Gray" ImageSource="cart.png" BackgroundColor="White"  Margin="-5,0,-10,0" FontSize="9" Clicked="Button_Basket"/>
+                    <Button x:Name="Hesap" Text="Hesabım"  ContentLayout="Top,0"  TextColor="Gray" ImageSource="user.png" BackgroundColor="White"  Margin="-5,0,-10,0" FontSize="9" Clicked="Button_Hesap"/>
+                    <Button x:Name="Dahafazlası" Text="Daha Fazla" ContentLayout="Top,0"  TextColor="Gray" ImageSource="dots.png" BackgroundColor="White"  Margin="-5,0,-10,0" FontSize="9" Clicked="Button_Diger"/>
+                </StackLayout>-->
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
