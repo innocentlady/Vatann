@@ -42,7 +42,7 @@
                 SeparatorVisibility="Default"   
                 HasUnevenRows="True"  
                 FlowItemTappedCommand="{Binding ItemTappedCommand}"   
-                FlowItemsSource="{Binding Items}">
+                FlowItemsSource="{Binding Items}"  FlowItemTapped="ÜrünTapped">
 
                             <flv:FlowListView.FlowColumnTemplate>
                                 <DataTemplate>
@@ -53,7 +53,7 @@
                                             <Label HorizontalOptions="Fill"  TextColor="Black"  XAlign="Center"    YAlign="Center"  Text="{Binding  ItemCost}"/>
                                             <Label HorizontalOptions="Fill"  TextColor="Black"  XAlign="Center"    YAlign="Center"  Text="{Binding ItemDetail}"/>
                                             <Label HorizontalOptions="Fill"  TextColor="Black"  XAlign="Center"    YAlign="Center"  Text="{Binding ItemtoShip}"/>
-                                            <Button Text="İncele" Clicked="Button_Page" TextColor="Red"/>
+                                           
                                         </StackLayout>
                                     </Frame>
                                 </DataTemplate>

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Vatann.Models;
 using Vatann.ViewModels;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
@@ -28,9 +29,10 @@ namespace Vatann.Views
             ItemModel = new ItemComputer(this);
             BindingContext = ItemModel;
         }
-        private async void Button_Page(object sender, EventArgs e)
+        private async void ÜrünTapped(object sender, ItemTappedEventArgs e)
         {
-            
+           
+            await Navigation.PushAsync(new PageComputer());
         }
         
 

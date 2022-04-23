@@ -12,20 +12,12 @@ namespace Vatann.Views
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class PageComputer : ContentPage
     {
-        Product ÜrünBilgileri;
+      
         int adet = 1;
 
-        public PageComputer(Product ürünItem)
+        public PageComputer()
         {
-            InitializeComponent();
-            ÜrünBilgileri = ürünItem;
-            id.Text = ÜrünBilgileri.Id.ToString();
-            Image.Source = ÜrünBilgileri.ImageSource;
-            Name.Text = ÜrünBilgileri.Name;
-            Detail.Text = ÜrünBilgileri.Info;
-            Cost.Text = string.Format("{0:#,0.####}", ÜrünBilgileri.Cost);
-            Taksit.Text = string.Format("{0:#,0.####}", (ÜrünBilgileri.Cost / 12)) + "'den başlayan taksitlerle ";
-            picker.SelectedIndex = 0;
+            InitializeComponent();         
         }
        
         private void picker_SelectedIndexChanged(object sender, EventArgs e)

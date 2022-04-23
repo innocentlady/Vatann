@@ -10,7 +10,7 @@
             </Image>
         </StackLayout>
     </NavigationPage.TitleView>-->
-    
+
     <ContentPage.Content>
         <StackLayout>
              <ScrollView>
@@ -20,9 +20,10 @@
                     <StackLayout BackgroundColor="#003176">
 
                             <Frame CornerRadius="10" IsClippedToBounds="True" Padding="0" Margin="5">
-                                <SearchBar  x:Name="msearch" Placeholder="Ürün Ara" Background="White" SearchButtonPressed="Button_Search"/>
+                            <SearchBar  x:Name="msearch" Placeholder="Ürün Ara" Background="White"   TextChanged="Handle_SearchButtonPressed"
+                 />
                             </Frame>
-
+                   
                         <StackLayout BackgroundColor="#003176" HeightRequest="250" Padding="5">
                             <CarouselView x:Name="FırsatÜrünleriCarousel" BackgroundColor="#003176" IndicatorView="indicatorView">
                                 <CarouselView.ItemTemplate>
@@ -90,8 +91,8 @@
                                 </BindableLayout.ItemTemplate>
                             </StackLayout>
                         </ScrollView>
-
-                    </StackLayout>
+                    
+                </StackLayout>
                 </ScrollView>
                 <!--<StackLayout x:Name="pagechoise" BackgroundColor="Transparent" Orientation="Horizontal">
                 <Button x:Name="Anasayfa" Text="Anasayfa" ImageSource="home.png" TextColor="Gray" ContentLayout="Top,0"  BackgroundColor="White"  Margin="-10,0,-5,0" FontSize="9" Clicked="Button_Main"/>

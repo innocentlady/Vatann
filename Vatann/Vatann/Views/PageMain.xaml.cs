@@ -29,12 +29,17 @@ namespace Vatann.Views
             FırsatÜrünleriCarousel.ItemsSource = CarouselItems;
             ItemModel = new ItemModel(this);
             BindingContext = ItemModel;
+      
         }
-        void Button_Search(object sender, EventArgs e)
+        List<string> Items = new List<string>
+    {
+            "Dominican Republic" , "United States" , "Spain" , "Costa Rica"
+    };
+        async void Handle_SearchButtonPressed(object sender, EventArgs e)
         {
-            var keyword = msearch.Text;
-             
+            await Navigation.PushAsync(new PageSearch());
         }
+     
         private async void Button_Clicked(object sender,EventArgs e)
         {
             await Navigation.PushAsync(new PageCategory());
