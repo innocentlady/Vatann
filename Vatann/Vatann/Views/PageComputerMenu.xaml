@@ -47,12 +47,13 @@
                             <flv:FlowListView.FlowColumnTemplate>
                                 <DataTemplate>
                                     <Frame BackgroundColor="White"   Margin="5">
-                                        <StackLayout>
-                                            <Image Source="{Binding ImageSource}"/>
+                                        <StackLayout >
+                                            <Image Source="{Binding ImageSource}" />
                                             <Label HorizontalOptions="Fill"  TextColor="Black"  XAlign="Center"    YAlign="Center"  Text="{Binding ItemName }"/>
                                             <Label HorizontalOptions="Fill"  TextColor="Black"  XAlign="Center"    YAlign="Center"  Text="{Binding  ItemCost}"/>
                                             <Label HorizontalOptions="Fill"  TextColor="Black"  XAlign="Center"    YAlign="Center"  Text="{Binding ItemDetail}"/>
                                             <Label HorizontalOptions="Fill"  TextColor="Black"  XAlign="Center"    YAlign="Center"  Text="{Binding ItemtoShip}"/>
+                                            <Button Text="İncele" Clicked="Button_Page" TextColor="Red"/>
                                         </StackLayout>
                                     </Frame>
                                 </DataTemplate>

@@ -15,7 +15,7 @@ namespace Vatann
             InitializeComponent();
             FlowListView.Init();
             DependencyService.Register<MockDataStore>();
-            MainPage =new NavigationPage(new PageTabbedMain());
+             MainPage =new NavigationPage(new PageTabbedMain());
 
         }
 

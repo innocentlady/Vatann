@@ -30,6 +30,11 @@ namespace Vatann.Views
             ItemModel = new ItemModel(this);
             BindingContext = ItemModel;
         }
+        void Button_Search(object sender, EventArgs e)
+        {
+            var keyword = msearch.Text;
+             
+        }
         private async void Button_Clicked(object sender,EventArgs e)
         {
             await Navigation.PushAsync(new PageCategory());

@@ -20,7 +20,7 @@
                     <StackLayout BackgroundColor="#003176">
 
                             <Frame CornerRadius="10" IsClippedToBounds="True" Padding="0" Margin="5">
-                                <SearchBar Placeholder="Ürün Ara" Background="White"/>
+                                <SearchBar  x:Name="msearch" Placeholder="Ürün Ara" Background="White" SearchButtonPressed="Button_Search"/>
                             </Frame>
 
                         <StackLayout BackgroundColor="#003176" HeightRequest="250" Padding="5">
@@ -48,15 +48,16 @@
                 FlowItemsSource="{Binding Items}">
 
                                 <flv:FlowListView.FlowColumnTemplate>
-                                    <DataTemplate>
+                                    <DataTemplate >
                                         <Frame BackgroundColor="White"   Margin="5">
                                             <StackLayout>
                                                 <Image Source="{Binding ImageSource}"/>
-                                                <Label HorizontalOptions="Fill"  TextColor="Black"  XAlign="Center"    YAlign="Center"  Text="{Binding ItemName }"/>
+                                                <Label HorizontalOptions="Fill"  TextColor="Black"  XAlign="Center"    YAlign="Center"  Text="{Binding ItemName }" />
                                                 <Label HorizontalOptions="Fill"  TextColor="Black"  XAlign="Center"    YAlign="Center"  Text="{Binding  ItemCost}"/>
                                                 <Label HorizontalOptions="Fill"  TextColor="Black"  XAlign="Center"    YAlign="Center"  Text="{Binding ItemDetail}"/>
                                                 <Label HorizontalOptions="Fill"  TextColor="Black"  XAlign="Center"    YAlign="Center"  Text="{Binding ItemtoShip}"/>
-                                            </StackLayout>
+                                                 
+                                        </StackLayout>
                                         </Frame>
                                     </DataTemplate>
                                 </flv:FlowListView.FlowColumnTemplate>
